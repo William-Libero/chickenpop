@@ -1,0 +1,431 @@
+@font-face { font-family: Arturo; src: url('../fonts/arturo/Arturo-Regular\ Trial.ttf'); }
+@font-face { font-family: Lato; src: url('../fonts/lato/Lato-Regular.ttf'); }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu-image-spacer{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.toogle-col{
+    display: none !important;
+}
+
+.navbar {
+    background-color: #faa30e;
+    z-index: 1;
+}
+
+.navbar-brand img{
+    width: 80%;
+}
+
+.cardapio-anchor {
+    display: block;
+    position: relative;
+    top: -175px;
+    visibility: hidden;
+}
+
+.localizacao-anchor {
+    display: block;
+    position: relative;
+    top: -175px;
+    visibility: hidden;
+}
+
+.contato-anchor {
+    display: block;
+    position: relative;
+    top: -170px;
+    visibility: hidden;
+}
+
+.menu-btn{
+    color: white !important;
+    font-size: 2em;
+    border: 1px solid white !important;
+}
+
+.food-menu-img{
+    width: 100%;
+}
+
+.ifood-banner{
+    width: 75%!important;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    color: white;
+    font-size: 3em;
+    background-color: #10b018;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.whatsapp-button a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+.nav-item a {
+    font-family: Arturo;
+    font-size: 2em !important;
+    font-weight: 800;
+    transition: 0.5s !important;
+    text-decoration: none;
+    color: white !important;
+}
+
+.nav-item a:hover{
+    color: black !important;
+}
+
+.container-brand-info{
+    background-color: white;
+    color: #ff7d01;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container-brand-info h2{
+    font-family: Arturo;
+    color: #ff7d01 !important;
+}
+
+.container-brand-info p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+.container-brand-info hr{
+    border: 1px solid #ff7d01;
+}
+
+
+.contact-social-links{
+    font-family: Arturo;
+    font-size: 1.5em;
+}
+
+.contact-social-links a{
+    color: #ff7d01 !important;
+}
+
+.contact-social-links ul{
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+}
+
+.contact-social-links li{
+    cursor: pointer;
+    color: white !important;
+    transition: 0.5s !important;
+    display: inline;
+    font-size: 2em;
+    margin-right: 5%;
+}
+
+.contact-social-links li:hover{
+    color: #fb4004 !important;
+}
+
+footer{
+    background-color: #faa30e;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center !important;
+}
+
+footer .rights-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+}
+
+footer .rights-text a{
+    color: white !important;
+    text-decoration: none;
+    transition: 0.5s !important;
+    border-bottom: 1px solid transparent;
+}
+
+footer .rights-text a:hover{
+    border-color: white;
+}
+
+.container-footer-logo{
+    width: 10% !important;
+}
+
+.footer-link {
+    font-family: Arturo;
+    font-size: 1em !important;
+    transition: 0.5s !important;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-link:hover{
+    color: black !important;
+}
+
+.footer-website-links{
+    font-family: Arturo;
+    font-size: 1.5em;
+    color: white !important;
+}
+
+.footer-website-links ul{
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.footer-website-links li{
+    cursor: pointer;
+    color: white !important;
+    transition: 0.5s !important;
+}
+
+.footer-website-links li:hover{
+    color: black !important;
+}
+
+.footer-website-links a{
+    text-decoration: none;
+}
+
+.footer-social-links{
+    font-family: Arturo;
+    font-size: 1.5em;
+    color: white !important;
+}
+
+.footer-social-links ul{
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-social-links li{
+    cursor: pointer;
+    color: white !important;
+    transition: 0.5s !important;
+    display: inline;
+    font-size: 1.5em;
+}
+
+.footer-social-links li:hover{
+    color: #fb4004 !important;
+}
+
+@media (max-width: 1500px) {
+    .ifood-banner{
+        width: 90%!important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .ifood-banner{
+        width: 100%!important;
+    }
+    
+    .cardapio-anchor {
+        top: -145px;
+    }
+
+    .localizacao-anchor {
+        top: -135px;
+    }
+}
+
+@media (max-width: 991px) {
+    .toogle-col{
+        display: flex !important;
+    }
+
+    .navbar-brand img{
+        width: 70% !important;
+    }
+    
+    .cardapio-anchor {
+        top: -20vh;
+    }
+
+    .localizacao-anchor {
+        top: -20vh;
+    }
+
+    .contato-anchor {
+        top: -170px;
+    }
+
+    .locale-text{
+        justify-content: normal !important;
+    }
+
+    .footer-logo{
+        width: 100%;
+    }
+
+    .footer-website-links{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-website-links ul {
+        width: 100%;
+    }
+
+    .footer-social-links{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-social-links ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .cardapio-anchor {
+        top: -20vh;
+    }
+
+    .localizacao-anchor {
+        top: -20vh;
+    }
+
+    .contato-anchor {
+        top: -20vh;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .container-footer-logo{
+        width: 100% !important;
+    }
+
+    .footer-logo{
+        width: 30%;
+    }
+    
+    .footer-website-links {
+        margin-top: 20px;
+    }
+    
+    .footer-social-links {
+        margin-top: 20px;
+    }
+    
+
+    .whatsapp-button {
+        margin-right: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 657px) {
+    .cardapio-anchor {
+        top: -20vh;
+    }
+
+    .localizacao-anchor {
+        top: -17vh;
+    }
+
+    .contato-anchor {
+        top: -20vh;
+    }
+
+    .navbar-brand img{
+        width: 75% !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .cardapio-anchor {
+        top: -17vh;
+    }
+
+    .localizacao-anchor {
+        top: -15vh;
+    }
+
+    .contato-anchor {
+        top: -15vh;
+    }
+
+    .navbar-brand img{
+        width: 85% !important;
+    }
+
+    .footer-logo{
+        width: 60%;
+    }
+
+    footer .rights-text{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 455px) {
+    .cardapio-anchor {
+        top: -15vh;
+    }
+
+    .localizacao-anchor {
+        top: -13vh;
+    }
+
+    .contato-anchor {
+        top: -13vh;
+    }
+
+    .navbar-brand img{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .cardapio-anchor {
+        top: -12vh;
+    }
+
+    .localizacao-anchor {
+        top: -10vh;
+    }
+
+    .contato-anchor {
+        top: -10vh;
+    }
+
+    .footer-logo{
+        width: 80%;
+    }
+}
